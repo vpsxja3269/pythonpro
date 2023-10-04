@@ -1,3 +1,0 @@
-print('I sense your energy. Your true emotion are coming across my screem.')
-
-happy = int(input)

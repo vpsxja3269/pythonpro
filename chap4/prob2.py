@@ -1,29 +1,43 @@
 import random
 
-hero_hp = random.randrange(50,101)
-monster_hp = random.randrange(50,101)
+H_HP = random.randrange(50, 101)
+M_HP = random.randrange(50, 101)
+H_S = " "
+M_S = " "
+Count = 0
 
+print("Hero HP : ", H_HP ,"Monster HP : ", M_HP)
 
+while True :
+    H_Attack = random.randrange(-10, 21)
+    M_Attack = random.randrange(-10, 21)
 
-print("hero HP: ",hero_hp ,", monster HP:", monster_hp)
+    if H_Attack > 0 :
+        H_S = "Succes"
+        M_HP -= H_Attack
+    
+    else :
+        H_S = "Fail"
+    
+    if M_Attack > 0 :
+        M_S = "Success"
+        H_HP -= M_Attack
 
-while hero_hp >  0 or monster_hp >  0:
+    else :
+            M_S = "Fail"
 
-    hero_att = random.randrange(-10,21)
-    monster_att = random.randrange(-10,21)
+    print("Hero(HP : ", H_HP, ", Attack : ", H_Attack, " ) ", H_S, " <-> Monster(HP : ", M_HP, ", Attack : ", M_Attack, " ) ", M_S, sep=" ")
+    Count += 1
+    
+    if H_HP < 0 or M_HP < 0 :
+        break
 
-    if monster_att > 0:
-        hero_hp = hero_hp - monster_att
-        A = 'success'
+print("---------------------------------------------------------------------")
 
-    else:
-        A = 'fail'
+print("Tetal phase : ", Count)
 
-    if hero_att > 0:
-        monster_hp = monster_hp - hero_att 
-        B = 'sussess'
+if M_HP > 0 :
+     print("Monster Win")
 
-    else:
-        B = 'fail'
-
-    print("hero(Hp:",hero_hp,", attack:",hero_att,") ",B,"  <-> monster(HP:",monster_hp,", attck:",monster_att,") ",A) 
+else :
+    print("Hero Win")

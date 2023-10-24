@@ -1,6 +1,6 @@
 import random
 
-def intro(){
+def intro() :
     print("]n")
     print("\tWelcome to the greatest intellectual challenge of all time: Tic-Tac-Toe.")
     print("\tThis will be a showdown between your human brain and my silicon processor.\n\n")
@@ -13,4 +13,3 @@ def intro(){
     print("\t\t\t\t6 | 7 | 8")
     print("\n\tPrepare yourself, human. The ultimate battle is about to begin.")
     print("\n\n")
-}

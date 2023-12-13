@@ -1,10 +1,40 @@
-class Critter:
-    """A virtual pet"""  # 클래스 정의
-    def talk(self):  # 내부 함수는 self를 무조건 써야 메소드로 인정함
-        print("Hi. I'm an instance of class Critter.")
+test_str = input("문자열을 입력하시오. : ")
 
-# main
-crit = Critter()
-crit.talk()
+a = 0
+b = 0
+c = 0
+d = 0
+e = 0
+f = 0
+g = 0
+h = 0
+i = 0
+j = 0
+k = 0
+l = 0
+m = 0
+n = 0
+o = 0
+p = 0
+q = 0
+r = 0
+s = 0
+t = 0
+u = 0
+v = 0
+w = 0
+x = 0
+y = 0
+z = 0
+ 
+for i in test_str:
+    if i == 'a':
+        a = a + 1
 
-n = input('Press the enter key to exit.')
+for i in test_str:
+    if i == 'b':
+        b = b + 1
+ 
+
+print("a : "+ str(a))
+print("b : "+ str(b))
